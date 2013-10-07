@@ -1,0 +1,70 @@
+//
+// Prefix header for all source files of the 'NicoTwi' target in the 'NicoTwi' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <QuartzCore/QuartzCore.h>
+    #import <Twitter/Twitter.h>
+    #import <StoreKit/StoreKit.h>
+    #import <Accounts/Accounts.h>
+    #import <CoreData/CoreData.h>
+    #import <SystemConfiguration/SystemConfiguration.h>
+    #import <MobileCoreServices/MobileCoreServices.h>
+
+    #import "UIImage+imageByShrinkingWithSize.h"
+    #import "UIImage+imageNamedWithColor.h"
+    #import "SafeURLProtocol.h"
+    #import "PSCollectionView+extends.h"
+    #import "UIViewController+dismissCompletion.h"
+
+    #import "IIViewDeckController.h"
+    #import "WCAlertView.h"
+    #import "PSCollectionView.h"
+    #import "ISRefreshControl.h"
+    #import "SVProgressHUD.h"
+    #import "AFNetworking.h"
+    #import "QuickDialog.h"
+    #import "SMPageControl.h"
+
+    #import "common.h"
+    #import "UserConfig.h"
+    #import "WebRequest.h"
+    #import "FlatUIUtils.h"
+    #import "UtilEx.h"
+    #import "LoadingIndicator.h"
+    #import "LoadingBar.h"
+    #import "CacheManager.h"
+    #import "VideoThumbnail.h"
+    #import "SubTitleView.h"
+    #import "TwitterView.h"
+    #import "MovieCell.h"
+    #import "FavoriteCache.h"
+    #import "LastFooterView.h"
+    #import "AddTagHeaderView.h"
+    #import "ActionObject.h"
+
+    #import "AdBannerViewController.h"
+    #import "SubTitleNavigationController.h"
+    #import "MenuViewController.h"
+    #import "TwAccountViewController.h"
+    #import "VideoDetailViewController.h"
+    #import "ActionMenuTableViewController.h"
+    #import "FavoriteViewController.h"
+    #import "EditClipViewController.h"
+    #import "WebBrowserViewController.h"
+    #import "HelpViewController.h"
+    #import "SettingViewController.h"
+
+    #import "DataManager.h"
+    #import "DataHelper.h"
+    #import "Favorite.h"
+    #import "Clip.h"
+#endif

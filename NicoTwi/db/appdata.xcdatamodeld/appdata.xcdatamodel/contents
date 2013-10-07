@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Clip" representedClassName="Clip" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="tagName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Favorite" representedClassName="Favorite" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="data" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoId" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="watchId" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <fetchRequest name="findByTagName" entity="Clip" predicateString="tagName == $tagName"/>
+    <fetchRequest name="findByVideoId" entity="Favorite" predicateString="videoId == $videoId OR watchId == $videoId"/>
+    <fetchRequest name="findByVideoIds" entity="Favorite" predicateString="videoId IN $videoIds OR watchId IN $videoIds"/>
+    <elements>
+        <element name="Favorite" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="Clip" positionX="160" positionY="192" width="128" height="75"/>
+    </elements>
+</model>
